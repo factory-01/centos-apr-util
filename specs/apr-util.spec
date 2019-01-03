@@ -23,6 +23,11 @@ URL:                            https://apr.apache.org/
 
 Source0:                        https://www.apache.org/dist/apr/%{name}-%{version}.tar.bz2
 
+# METASTORE - [
+# Signature
+Source900:                      https://apache.org/dist/apr/%{name}-%{version}.tar.bz2.asc
+# ] - METASTORE
+
 Patch1:                         apr-util-1.2.7-pkgconf.patch
 Patch4:                         apr-util-1.4.1-private.patch
 Patch5:                         apr-util-mariadb-upstream.patch
