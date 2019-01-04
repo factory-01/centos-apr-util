@@ -68,7 +68,7 @@ library of C data structures and routines.
 %package pgsql
 Group:                          Development/Libraries
 Summary:                        APR utility library PostgreSQL DBD driver
-BuildRequires:                  libpq-devel
+BuildRequires:                  postgresql-devel
 Requires:                       apr-util%{?_isa} = %{version}-%{release}
 
 %description pgsql
@@ -95,7 +95,7 @@ DBM (database abstraction) interface.
 %package mysql
 Group:                          Development/Libraries
 Summary:                        APR utility library MySQL DBD driver
-BuildRequires:                  mariadb-connector-c-devel
+BuildRequires:                  mariadb-devel
 Requires:                       apr-util%{?_isa} = %{version}-%{release}
 
 %description mysql
