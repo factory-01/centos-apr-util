@@ -36,12 +36,8 @@ BuildRequires:                  gcc
 BuildRequires:                  autoconf, apr-devel >= 1.3.0
 BuildRequires:                  %{dbdep}, expat-devel, libuuid-devel
 
-Recommends:                     apr-util-openssl%{_isa} = %{version}-%{release}
-%if 0%{?fedora} < 27
+Requires:                       apr-util-openssl%{_isa} = %{version}-%{release}
 Requires:                       apr-util-bdb%{?_isa} = %{version}-%{release}
-%else
-Recommends:                     apr-util-bdb%{_isa} = %{version}-%{release}
-%endif
 
 %description
 The mission of the Apache Portable Runtime (APR) is to provide a
